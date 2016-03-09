@@ -245,20 +245,37 @@ ul li {
 
 li ul.sub-menu1 {
     position: absolute;
-    left: 335px;
+    left: 600px;
     right: 180px;
     top: 555px;
     display: none;
     z-index: 10;
 }
 
+ul ul ul{
+	visibility: hidden;
+}
+
 li ul.sub-menu2 {
     position: absolute;
     left: 600px;
     right: 180px;
-    top: 600px;
+    top: 555px;
     display: none;
     z-index: 10;
+}
+
+li ul.sub-menu3 {
+    position: absolute;
+    left: 600px;
+    right: 180px;
+    top: 555px;
+    display: none;
+    z-index: 10;
+}
+
+.lateral li:hover > ul{
+	 visibility: visible;
 }
 
 .lateral li ul li.sub-menu1 {
@@ -267,7 +284,12 @@ li ul.sub-menu2 {
 }
 
 .lateral li ul li.sub-menu2 {
-    min-width: 50%;
+    min-width: 40%;
+    margin-left: 10px;
+}
+
+.lateral li ul li.sub-menu3 {
+    min-width: 40%;
     margin-left: 10px;
 }
 
