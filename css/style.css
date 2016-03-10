@@ -24,6 +24,21 @@ body {
     width: 35%;
 }
 
+.icon {
+    float: left;
+    margin: 15px 20px;
+    width: 10%;
+}
+
+.link {
+	color: #F97D6D;
+	text-decoration: none;
+}
+
+.bold {
+	color: #78909C;
+}
+
 h2 {
     color: #78909C;
     font-size: 28px;
@@ -79,7 +94,7 @@ p {
     border: 1px solid lightgray;
     padding: 20px;
     max-width: 1170px;
-    height: 140%;
+    min-height: 120%;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -94,12 +109,11 @@ p {
     float: right;
     margin-top: 20px;
     margin-right: 15px;
-    min-height: 400px;
-    height: auto !important;
+    min-height: 100%;
 }
 
 .text-content {
-    height: 100%;
+    height: 1https://docs.google.com/document/d/1Gv5pe3N8fOFjtt_PRsa40n4s3XyOx8ypwy6STFsJ6xw00%;
 }
 .cadastro .new_user{
     width: 25%;
@@ -247,9 +261,18 @@ ul li {
 
 li ul.sub-menu1 {
     position: absolute;
-    left: 370px;
+    left: 620px;
     right: 80px;
-    top: 560px;
+    top: 567px;
+    display: none;
+    z-index: 10;
+}
+
+li ul.sub-menu2	{
+    position: absolute;
+    left: 620px;
+    right: 80px;
+    top: 614px;
     display: none;
     z-index: 10;
 }
@@ -258,11 +281,19 @@ ul ul ul{
 	visibility: hidden;
 }
 
-li ul.sub-menu2 {
+.lateral li ul.sub-sub-menu1 {
     position: absolute;
-    left: 380px;
+    left: 390px;
     right: 80px;
-    top: 100px;
+    top: 46px;
+    z-index: 10;
+}
+
+li ul.sub-sub-menu2 {
+    position: absolute;
+    left: 390px;
+    right: 80px;
+    top: 92px;
     display: none;
     z-index: 10;
 }
@@ -277,7 +308,17 @@ li ul.sub-menu2 {
 }
 
 .lateral li ul li.sub-menu2 {
-    min-width: 90%;
+    min-width: 33%;
+    margin-left: 10px;
+}
+
+.lateral li ul li.sub-sub-menu1 {
+    min-width: 50%;
+    margin-left: 10px;
+}
+
+.lateral li ul li.sub-sub-menu2 {
+    min-width: 60%;
     margin-left: 10px;
 }
 
