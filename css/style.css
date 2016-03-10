@@ -20,13 +20,13 @@ body {
 
 .ilustration {
     float: right;
-    margin: 15px 20px;
+    margin: 0 20px;
     width: 35%;
 }
 
 .icon {
     float: left;
-    margin: 15px 20px;
+    margin: 0 20px 0 0;
     width: 10%;
 }
 
