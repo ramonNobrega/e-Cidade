@@ -37,6 +37,7 @@ h2.subtitle {
 
 h3 {
     font-family: 'Open Sans', sans-serif;
+    color: #F97D6D;
 }
 
 #question {
@@ -93,7 +94,8 @@ p {
     float: right;
     margin-top: 20px;
     margin-right: 15px;
-    height: 100%;
+    min-height: 400px;
+    height: auto !important;
 }
 
 .text-content {
@@ -245,9 +247,9 @@ ul li {
 
 li ul.sub-menu1 {
     position: absolute;
-    left: 600px;
-    right: 180px;
-    top: 555px;
+    left: 370px;
+    right: 80px;
+    top: 560px;
     display: none;
     z-index: 10;
 }
@@ -258,18 +260,9 @@ ul ul ul{
 
 li ul.sub-menu2 {
     position: absolute;
-    left: 600px;
-    right: 180px;
-    top: 555px;
-    display: none;
-    z-index: 10;
-}
-
-li ul.sub-menu3 {
-    position: absolute;
-    left: 600px;
-    right: 180px;
-    top: 555px;
+    left: 380px;
+    right: 80px;
+    top: 100px;
     display: none;
     z-index: 10;
 }
@@ -284,12 +277,7 @@ li ul.sub-menu3 {
 }
 
 .lateral li ul li.sub-menu2 {
-    min-width: 40%;
-    margin-left: 10px;
-}
-
-.lateral li ul li.sub-menu3 {
-    min-width: 40%;
+    min-width: 90%;
     margin-left: 10px;
 }
 
