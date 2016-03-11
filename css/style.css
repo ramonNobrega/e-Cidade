@@ -233,6 +233,7 @@ ul li {
     margin-top: 10px;
     clear: both;
 }
+
 .lateral li {
     border-bottom: 1px solid #fff;
     background-color: #F7C2BB;
@@ -247,79 +248,12 @@ ul li {
     margin-left: 20px;
 }
 
-.lateral .ic_menu::after{
-    content: " ";
-    width: 20px;
-    height: 20px;
-    background: url(../images/ic_menu_normal.png) center top no-repeat;
-    float: right;
-    margin-top: 15px;
-    margin-right: 10px;
-}
-
-/*    background: url(../images/ic_menu_hover.png) center top no-repeat; */
-
-li ul.sub-menu1 {
-    position: absolute;
-    left: 620px;
-    right: 80px;
-    top: 567px;
-    display: none;
-    z-index: 10;
-}
-
-li ul.sub-menu2	{
-    position: absolute;
-    left: 620px;
-    right: 80px;
-    top: 614px;
-    display: none;
-    z-index: 10;
-}
-
 ul ul ul{
 	visibility: hidden;
 }
 
-.lateral li ul.sub-sub-menu1 {
-    position: absolute;
-    left: 390px;
-    right: 80px;
-    top: 46px;
-    z-index: 10;
-}
-
-li ul.sub-sub-menu2 {
-    position: absolute;
-    left: 390px;
-    right: 80px;
-    top: 92px;
-    display: none;
-    z-index: 10;
-}
-
 .lateral li:hover > ul{
 	 visibility: visible;
-}
-
-.lateral li ul li.sub-menu1 {
-    min-width: 40%;
-    margin-left: 10px;
-}
-
-.lateral li ul li.sub-menu2 {
-    min-width: 33%;
-    margin-left: 10px;
-}
-
-.lateral li ul li.sub-sub-menu1 {
-    min-width: 50%;
-    margin-left: 10px;
-}
-
-.lateral li ul li.sub-sub-menu2 {
-    min-width: 60%;
-    margin-left: 10px;
 }
 
 li:hover ul { display: block; }
