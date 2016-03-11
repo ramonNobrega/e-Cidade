@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Aprenda Mais Saúde - e-Cidade - Documentação</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-menu.css">
     <link rel="stylesheet" href="css/style-buttons.css">
   </head>
   
@@ -57,52 +58,225 @@
 
             <h4 class="subtitle">ÁREA DE SAÚDE E SEUS MÓDULOS</h4>
 
-        <nav class="menu-modulos">
-                <ul class="lateral">
-                    <li><a href="#" class="ic_menu">CONFIGURAÇÕES INICIAIS</a>
-                        <ul class="lateral sub-menu1">
-                            <li class="sub-menu1"><a href="#">INTRODUÇÃO</a></li>
-                            <li class="sub-menu1"><a href="#">PREFEITURA</a></li>
-                            <li class="sub-menu1"><a href="#">ÓRGÃO</a></li>
-                            <li class="sub-menu1"><a href="#">UNIDADES</a></li>
-                            <li class="sub-menu1"><a href="#">DEPARTAMENTO</a></li>
-                            <li class="sub-menu1"><a href="#">UPS</a></li>
-                            <li class="sub-menu1"><a href="#">CADASTRO GERAL DO MUNICÍPIO</a></li>
-                            <li class="sub-menu1"><a href="#">ESTABELECIMENTO HOSPITALAR</a></li>
-                            <li class="sub-menu1"><a href="#">PROFISSIONAL DE SAÚDE</a></li>
-                            <li class="sub-menu1"><a href="#">PACIENTE</a></li></ul>
-                    </li>
-                    <li><a href="#" class="ic_menu">AGENDAMENTO</a>
-                        <ul class="lateral sub-menu2">
-                            <li class="sub-menu2"><a href="#">INTRODUÇÃO</a></li>
-                            <li class="ic_menu sub-menu2"><a href="#">CENTRAL DE AGENDAMENTO INTEGRADA</a>
-                        			<ul class="lateral sub-sub-menu1">
-                           			<li class="sub-sub-menu1"><a href="#">CADASTRO DO TIPO DE FICHA</a></li>
-                            			<li class="sub-sub-menu1"><a href="#">AGENDAMENTO DE CONSULTA</a></li>
-                            			<li class="sub-sub-menu1"><a href="#">CONSULTA DA AGENDA DE PACIENTES</a></li>
-                            			<li class="sub-sub-menu1"><a href="#">TRANSFERÊNCIA</a></li>
-                            			<li class="sub-sub-menu1"><a href="#">ANULAR AGENDAMENTOS</a></li>
-                            			<li class="sub-sub-menu1"><a href="#">AGENDAMENTO UNIFICADO</a></li>
-                            			<li class="sub-sub-menu1"><a href="#">CONTROLE DE COTAS</a></li>
-                        			</ul>
-                        	</li>
-                           <li class="ic_menu sub-menu2"><a href="#">GERAÇÃO DE RELATÓRIOS</a>
-                            		<ul class="lateral sub-sub-menu2">
-                           			<li class="sub-sub-menu2"><a href="#">RELATÓRIO DE AGENDAMENTO</a></li>
-                            			<li class="sub-sub-menu2"><a href="#">RELATÓRIO DE AGENDAMENTO POR PERÍODO</a></li>
-                            			<li class="sub-sub-menu2"><a href="#">RELATÓRIO DE AGENDAMENTO ANULADO</a></li>
-                            			<li class="sub-sub-menu2"><a href="#">RELATÓRIO DE CONTROLE DE COTAS</a></li>
-                        			</ul>
-                        	</li>
-                        	<li class="sub-menu2"><a href="#">GERAÇÃO DE FAA's</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="ic_menu">AMBULATORIAL</a></li>
-                    <li><a href="#" class="ic_menu">FARMÁCIA</a></li>
-                    <li><a href="#" class="ic_menu">HIPERDIA</a></li>
-                    <li><a href="#" class="ic_menu">TFD</a></li>
-                    <li><a href="#" class="ic_menu">VACINAS</a></li>
-                </ul>
+        <nav id='menu' class="menu-modulos">
+            <ul class="lateral">
+                <li class='active has-sub'><a href='#'><span>CONFIGURAÇÕES INICIAIS</span></a>
+                    <ul id="sub-menu1">
+                        <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                        <li><a href='#'><span>PREFEITURA</span></a></li>
+                        <li><a href='#'><span>ÓRGÃO</span></a></li>
+                        <li><a href='#'><span>UNIDADES</span></a></li>
+                        <li><a href='#'><span>DEPARTAMENTO</span></a></li>
+                        <li><a href='#'><span>UPS</span></a></li>
+                        <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                        <li><a href='#'><span>ESTABELECIMENTO HOSPITALAR</span></a></li>
+                        <li><a href='#'><span>PROFISSIONAL DE SAÚDE</span></a></li>
+                        <li><a href='#'><span>PACIENTE</span></a></li>
+                    </ul>
+                </li>
+                <li class='active has-sub'><a href='#'><span>AGENDAMENTO</span></a>
+                    <ul id="sub-menu2">
+                        <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>CENTRAL DE AGENDAMENTO INTEGRADA</span></a>
+                            <ul id="sub-sub-menu1">
+                                <li><a href='#'><span>CADASTRO DO TIPO DE FICHA</span></a></li>
+                                <li><a href='#'><span>AGENDAMENTO DE CONSULTA</span></a></li>
+                                <li><a href='#'><span>CONSULTA DA AGENDA DE PACIENTES</span></a></li>
+                                <li><a href='#'><span>TRANSFERÊNCIA</span></a></li>
+                                <li><a href='#'><span>ANULAR AGENDAMENTOS</span></a></li>
+                                <li><a href='#'><span>AGENDAMENTO UNIFICADO</span></a></li>
+                                <li><a href='#'><span>CONTROLE DE COTAS</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a>
+                            <ul id="sub-sub-menu2">
+                                <li><a href='#'><span>AGENDAMENTO</span></a></li>
+                                <li><a href='#'><span>AGENDAMENTO POR PERÍODO</span></a></li>
+                                <li><a href='#'><span>AGENDAMENTO ANULADO</span></a></li>
+                                <li><a href='#'><span>CONTROLE DE COTAS</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href='#'><span>GERAÇÃO DE FAA's</span></a></li>
+                    </ul>
+                </li>
+                <li class='active has-sub'><a href='#'><span>AMBULATORIAL</span></a>
+                    <ul>
+                        <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                            <ul>
+                                <li><a href='#'><span>MOTIVO DE AUSÊNCIA</span></a></li>
+                                <li><a href='#'><span>MOTIVO DE ATENDIMENTO</span></a></li>
+                                <li><a href='#'><span>PROCEDIMENTOS NÃO-FATURÁVEIS</span></a></li>
+                                <li><a href='#'><span>CADASTRO GERAL DA SAÚDE</span></a></li>
+                                <li><a href='#'><span>CARTÃO SUS</span></a></li>
+                                <li><a href='#'><span>FATOR DE RISCO</span></a></li>
+                                <li><a href='#'><span>PROFISSIONAL DE SAÚDE</span></a></li>
+                                <li><a href='#'><span>PROFISSIONAIS FORA DA REDE</span></a></li>
+                                <li><a href='#'><span>DISTRITOS SANITÁRIOS</span></a></li>
+                                <li><a href='#'><span>UPS</span></a></li>
+                                <li><a href='#'><span>FAMÍLIA</span></a></li>
+                                <li><a href='#'><span>MICRO-ÁREA</span></a></li>
+                                <li><a href='#'><span>FAMÍLIA/MICRO-ÁREA</span></a></li>
+                                <li><a href='#'><span>TABELAS NACIONAIS</span></a></li>
+                                <li><a href='#'><span>AÇÕES PROGRAMÁTICAS</span></a></li>
+                                <li><a href='#'><span>GERAL DO MUNICÍPIO</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a>
+                            <ul>
+                                <li><a href='#'><span>CONSULTA GERAL DA SAÚDE</span></a></li>
+                                <li><a href='#'><span>PRONTUÁRIOS DA FAMÍLIA</span></a></li>
+                                <li><a href='#'><span>CIDs</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a>
+                            <ul>
+                                <li><a href='#'><span>BOLETIM DE PRODUÇÃO AMBULATORIAL</span></a></li>
+                                <li><a href='#'><span>ATENDIMENTO MÉDICO</span></a></li>
+                                <li><a href='#'><span>FICHA DE ATENDIMENTO AMBULATORIAL</span></a></li>
+                                <li><a href='#'><span>ESPECIAIS DA SAÚDE</span></a></li>
+                                <li><a href='#'><span>CADASTRAIS DA SAÚDE</span></a></li>
+                                <li><a href='#'><span>CONSISTENCIAR LOTES</span></a></li>
+                                <li><a href='#'><span>CARTÃO SUS</span></a></li>
+                                <li><a href='#'><span>CGS DUPLOS</span></a></li>
+                                <li><a href='#'><span>CGS CORREIOS</span></a></li>
+                                <li><a href='#'><span>GERAL CGS</span></a></li>
+                                <li><a href='#'><span>CBO</span></a></li>
+                                <li><a href='#'><span>PROFISSIONAIS DA SAÚDE</span></a></li>
+                                <li><a href='#'><span>PRODUÇÃO AMBULATORIAL</span></a></li>
+                                <li><a href='#'><span>AGRAVO</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a>
+                            <ul>
+                                <li><a href='#'><span>ENTREGA DE MEDICAMENTO</span></a></li>
+                                <li><a href='#'><span>DEVOLUÇÃO DE MEDICAMENTO</span></a></li>
+                                <li><a href='#'><span>MEDICAMENTO CONTINUADO</span></a></li>
+                                <li><a href='#'><span>GERAÇÃO LIVRO DOS CONTINUADOS</span></a></li>
+                                <li><a href='#'><span>PARÂMETROS</span></a></li>
+                                <li><a href='#'><span>FATOR DE RISCO</span></a></li>
+                                <li><a href='#'><span>EXPORTAR CGS PARA HIPERDIA</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class='active has-sub'><a href='#'><span>FARMÁCIA</span></a>
+                    <ul>
+                        <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                            <ul>
+                                <li><a href='#'><span>ANVISA</span></a></li>
+                                <li><a href='#'><span>MEDICAMENTOS</span></a></li>
+                                <li><a href='#'><span>CLASSIFICAÇÃO</span></a></li>
+                                <li><a href='#'><span>TIPO DE RECEITA</span></a></li>
+                                <li><a href='#'><span>AÇÕES PROGRAMÁTICAS</span></a></li>
+                                <li><a href='#'><span>FARMACÊUTICO</span></a></li>
+                                <li><a href='#'><span>FARMÁCIA</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a>
+                            <ul>
+                                <li><a href='#'><span>MEDICAMENTOS</span></a></li>
+                                <li><a href='#'><span>RELATÓRIOS LEGAIS</span></a></li>
+                                <li><a href='#'><span>HISTÓRICO</span></a></li>
+                                <li><a href='#'><span>LISTA DE PACIENTES</span></a></li>
+                                <li><a href='#'><span>ADMINISTRAÇÃO DE MEDICAMENTOS</span></a></li>
+                                <li><a href='#'><span>REEMISSÃO DE COMPROVANTE</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a>
+                            <ul>
+                                <li><a href='#'><span>CONSULTA GERAL DA SAÚDE</span></a></li>
+                                <li><a href='#'><span>PACIENTE</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a>
+                            <ul>
+                                <li><a href='#'><span>ENTREGA DE MEDICAMENTO</span></a></li>
+                                <li><a href='#'><span>DEVOLUÇÃO DE MEDICAMENTO</span></a></li>
+                                <li><a href='#'><span>MEDICAMENTO CONTINUADO</span></a></li>
+                                <li><a href='#'><span>GERAÇÃO LIVRO DOS CONTINUADOS</span></a></li>
+                                <li><a href='#'><span>PARÂMETROS</span></a></li>
+                                <li><a href='#'><span>FATOR DE RISCO</span></a></li>
+                                <li><a href='#'><span>EXPORTAR CGS PARA HIPERDIA</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class='active has-sub'><a href='#'><span>HIPERDIA</span></a>
+                    <ul>
+                        <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                            <ul>
+                                <li><a href='#'><span>CADASTRO GERAL DA SAÚDE</span></a></li>
+                                <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href='#'><span>DADOS PARA EXPORTAÇÃO</span></a></li>
+                        <li><a href='#'><span>CONSULTA GERAL DA SAÚDE</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a>
+                            <ul>
+                                <li><a href='#'><span>FATORES DE RISCO</span></a></li>
+                                <li><a href='#'><span>HIPERTENSOS E DIABÉTICOS</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class='active has-sub'><a href='#'><span>LABORATÓRIO</span></a>
+                    <ul>
+                        <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                            <ul>
+                                <li><a href='#'><span>TIPO DE DOCUMENTO</span></a></li>
+                                <li><a href='#'><span>RECIPIENTE</span></a></li>
+                                <li><a href='#'><span>MATERIAL DE COLETA</span></a></li>
+                                <li><a href='#'><span>SETOR</span></a></li>
+                                <li><a href='#'><span>UNIDADE DE MEDIDA</span></a></li>
+                                <li><a href='#'><span>METODOLOGIA</span></a></li>
+                                <li><a href='#'><span>MÉTODO</span></a></li>
+                                <li><a href='#'><span>REQUISITO</span></a></li>
+                                <li><a href='#'><span>SINOMÍNIA</span></a></li>
+                                <li><a href='#'><span>EXAME</span></a></li>
+                                <li><a href='#'><span>LABORATÓRIO</span></a></li>
+                                <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a>
+                            <ul>
+                                <li><a href='#'><span>FATORES DE RISCO</span></a></li>
+                                <li><a href='#'><span>HIPERTENSOS E DIABÉTICOS</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class='active has-sub'><a href='#'><span>TFD</span></a>
+                    <ul>
+                        <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                            <ul>
+                                <li><a href='#'><span>CADASTRO GERAL DA SAÚDE</span></a></li>
+                                <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a></li>
+                    </ul>
+                </li>
+                <li class='active has-sub'><a href='#'><span>VACINAS</span></a>
+                    <ul>
+                        <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                            <ul>
+                                <li><a href='#'><span>CADASTRO GERAL DA SAÚDE</span></a></li>
+                                <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a></li>
+                    </ul>
+                </li>
+                </li>
+            </ul>
         </nav>
         </section> <!-- Fim da sidebar - Menu Lateral -->
 
