@@ -1,132 +1,385 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Aprenda Mais Saúde - e-Cidade - Documentação</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style-menu.css">
     <link rel="stylesheet" href="../../css/style-buttons.css">
-  </head>
-  
-  <body>
-		
-        <section class="top">
-		<nav class="principal">
-            <article class="logo">
-                <img src="../../images/logo_ecidade.png" title="Logo e-Cidade" height="51" width="190" alt="">
-            </article>
+</head>
 
-            <ul>
-				<li><a href="#videoaulas">VÍDEO AULAS</a></li>
-	    		<li><a href="#sobre">SOBRE OS CURSOS</a></li>
-	    		<li><a href="#doc">DOCUMENTAÇÃO</a></li>
-	    		<li><a href="#inicio">INÍCIO</a></li>
-		  </ul>
-		</nav>
-        </section> <!-- fim do topo-->
+<body>
 
-		<div class="cadastro principal">
-			<section class="new_user">
-			<h3 id="question">AINDA NÃO É ALUNO?</h3>
-			<button onclick="location.href='http://moodle.cloud.citta.org.br/moodle/login/signup.php?';" class="bt_second_action bt_main">CADASTRO GRATUITO</button>
-			</section>
-		</div>	 <!-- Fim do cadastro -->	
-		
-		<div class="main">
+    <section class="top">
+      <nav class="principal">
+        <article class="logo">
+            <img src="../../images/logo_ecidade.png" title="Logo e-Cidade" height="51" width="190" alt="">
+        </article>
+
+        <ul>
+            <li><a href="#videoaulas">VÍDEO AULAS</a></li>
+            <li><a href="#sobre">SOBRE OS CURSOS</a></li>
+            <li><a href="#doc">DOCUMENTAÇÃO</a></li>
+            <li><a href="#inicio">INÍCIO</a></li>
+        </ul>
+    </nav>
+</section> <!-- fim do topo-->
+
+<div class="cadastro principal">
+ <section class="new_user">
+     <h3 id="question">AINDA NÃO É ALUNO?</h3>
+     <button onclick="location.href='http://moodle.cloud.citta.org.br/moodle/login/signup.php?';" class="bt_second_action bt_main">CADASTRO GRATUITO</button>
+ </section>
+</div>	 <!-- Fim do cadastro -->	
+
+<div class="main">
 	
-		<h2 id="title">DOCUMENTAÇÃO </h2>
+  <h2 id="title">DOCUMENTAÇÃO </h2>
 
-		<section class="search">
-         
-         <button style="float:right;" class="bt_second_action bt_main">OK</button>
+  <section class="search">
 
-        <input style="height:40px; width:60%; float:right; border-radius: 5px;" placeholder="Pesquisa rápida..." type="text">
-        </section>
-        <hr>
-        
-        <section class="sidebar">
-            
-            <h4 class="subtitle">INFORMAÇÕES GERAIS</h4>
+   <button style="float:right;" class="bt_second_action bt_main">OK</button>
 
-        <nav class="menu-info-gerais">
-            <ul class="lateral">
-                <li><a href="#">INTRODUÇÃO</a></li>
-                <li><a href="#">COMO FUNCIONA?</a></li>
-                <li><a href="#">ÁREAS</a></li>
-            </ul>
-        </nav>
+   <input style="height:40px; width:60%; float:right; border-radius: 5px;" placeholder="Pesquisa rápida..." type="text">
+</section>
+<hr>
 
-            <h4 class="subtitle">ÁREA DE SAÚDE E SEUS MÓDULOS</h4>
+<section class="sidebar">
 
-        <nav class="menu-modulos">
-                <ul class="lateral">
-                    <li><a href="#" class="ic_menu">CONFIGURAÇÕES INICIAIS</a>
-                        <ul class=" sub-menu1">
-                            <li class="sub-menu1"><a href="#">INTRODUÇÃO</a></li>
-                            <li class="sub-menu1"><a href="#">PREFEITURA</a></li>
-                            <li class="sub-menu1"><a href="#">ÓRGÃO</a></li>
-                            <li class="sub-menu1"><a href="#">UNIDADES</a></li>
-                            <li class="sub-menu1"><a href="#">DEPARTAMENTO</a></li>
-                            <li class="sub-menu1"><a href="#">UPS</a></li>
-                            <li class="sub-menu1"><a href="#">CADASTRO GERAL DO MUNICÍPIO</a></li>
-                            <li class="sub-menu1"><a href="#">ESTABELECIMENTO HOSPITALAR</a></li>
-                            <li class="sub-menu1"><a href="#">PROFISSIONAL DE SAÚDE</a></li>
-                            <li class="sub-menu1"><a href="#">PACIENTE</a></li></ul>
-                    </li>
-                    <li><a href="#" class="ic_menu">AGENDAMENTO</a>
-                        <ul class="lateral sub-menu2">
-                            <li class="sub-menu2"><a href="#">INTRODUÇÃO</a></li>
-                            <li class="sub-menu2"><a href="#">SERVIÇOS</a></li>
-                            <li class="sub-menu2"><a href="#">CENTRAL DE AGENDAMENTO INTEGRADA</a></li>
-                            <li class="sub-menu2"><a href="#">GERAÇÃO DE RELATÓRIOS</a></li>
+    <h4 class="subtitle">INFORMAÇÕES GERAIS</h4>
+
+    <nav class="menu-info-gerais">
+        <ul class="lateral">
+            <li><a href="#">INTRODUÇÃO</a></li>
+            <li><a href="#">COMO FUNCIONA?</a></li>
+            <li><a href="#">ÁREAS</a></li>
+        </ul>
+    </nav>
+
+    <h4 class="subtitle">ÁREA DE SAÚDE E SEUS MÓDULOS</h4>
+
+    <nav class="menu-info-gerais">
+        <ul class="lateral">
+            <li><a href="#">INTRODUÇÃO</a></li>
+            <li><a href="#">COMO FUNCIONA?</a></li>
+            <li><a href="#">ÁREAS</a></li>
+        </ul>
+    </nav>
+
+    <h4 class="subtitle">ÁREA DE SAÚDE E SEUS MÓDULOS</h4>
+
+    <nav id='menu' class="menu-modulos">
+        <ul class="lateral">
+            <li class='active has-sub'><a href='#'><span>CONFIGURAÇÕES INICIAIS</span></a>
+                <ul id="sub-menu1">
+                    <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                    <li><a href='#'><span>PREFEITURA</span></a></li>
+                    <li><a href='#'><span>ÓRGÃO</span></a></li>
+                    <li><a href='#'><span>UNIDADES</span></a></li>
+                    <li><a href='#'><span>DEPARTAMENTO</span></a></li>
+                    <li><a href='#'><span>UPS</span></a></li>
+                    <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                    <li><a href='#'><span>ESTABELECIMENTO HOSPITALAR</span></a></li>
+                    <li><a href='#'><span>PROFISSIONAL DE SAÚDE</span></a></li>
+                    <li><a href='#'><span>PACIENTE</span></a></li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>AGENDAMENTO</span></a>
+                <ul id="sub-menu2">
+                    <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>CENTRAL DE AGENDAMENTO INTEGRADA</span></a>
+                        <ul id="sub-sub-menu1">
+                            <li><a href='#'><span>CADASTRO DO TIPO DE FICHA</span></a></li>
+                            <li><a href='#'><span>AGENDAMENTO DE CONSULTA</span></a></li>
+                            <li><a href='#'><span>CONSULTA DA AGENDA DE PACIENTES</span></a></li>
+                            <li><a href='#'><span>TRANSFERÊNCIA</span></a></li>
+                            <li><a href='#'><span>ANULAR AGENDAMENTOS</span></a></li>
+                            <li><a href='#'><span>AGENDAMENTO UNIFICADO</span></a></li>
+                            <li><a href='#'><span>CONTROLE DE COTAS</span></a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="ic_menu">AMBULATORIAL</a></li>
-                    <li><a href="#" class="ic_menu">FARMÁCIA</a></li>
-                    <li><a href="#" class="ic_menu">HIPERDIA</a></li>
-                    <li><a href="#" class="ic_menu">TFD</a></li>
-                    <li><a href="#" class="ic_menu">VACINAS</a></li>
+                    <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a>
+                        <ul id="sub-sub-menu2">
+                            <li><a href='#'><span>AGENDAMENTO</span></a></li>
+                            <li><a href='#'><span>AGENDAMENTO POR PERÍODO</span></a></li>
+                            <li><a href='#'><span>AGENDAMENTO ANULADO</span></a></li>
+                            <li><a href='#'><span>CONTROLE DE COTAS</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#'><span>GERAÇÃO DE FAA's</span></a></li>
                 </ul>
-        </nav>
+            </li>
+            <li class='active has-sub'><a href='#'><span>AMBULATORIAL</span></a>
+                <ul>
+                    <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                        <ul>
+                            <li><a href='#'><span>MOTIVO DE AUSÊNCIA</span></a></li>
+                            <li><a href='#'><span>MOTIVO DE ATENDIMENTO</span></a></li>
+                            <li><a href='#'><span>PROCEDIMENTOS NÃO-FATURÁVEIS</span></a></li>
+                            <li><a href='#'><span>CADASTRO GERAL DA SAÚDE</span></a></li>
+                            <li><a href='#'><span>CARTÃO SUS</span></a></li>
+                            <li><a href='#'><span>FATOR DE RISCO</span></a></li>
+                            <li><a href='#'><span>PROFISSIONAL DE SAÚDE</span></a></li>
+                            <li><a href='#'><span>PROFISSIONAIS FORA DA REDE</span></a></li>
+                            <li><a href='#'><span>DISTRITOS SANITÁRIOS</span></a></li>
+                            <li><a href='#'><span>UPS</span></a></li>
+                            <li><a href='#'><span>FAMÍLIA</span></a></li>
+                            <li><a href='#'><span>MICRO-ÁREA</span></a></li>
+                            <li><a href='#'><span>FAMÍLIA/MICRO-ÁREA</span></a></li>
+                            <li><a href='#'><span>TABELAS NACIONAIS</span></a></li>
+                            <li><a href='#'><span>AÇÕES PROGRAMÁTICAS</span></a></li>
+                            <li><a href='#'><span>GERAL DO MUNICÍPIO</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a>
+                        <ul>
+                            <li><a href='#'><span>CONSULTA GERAL DA SAÚDE</span></a></li>
+                            <li><a href='#'><span>PRONTUÁRIOS DA FAMÍLIA</span></a></li>
+                            <li><a href='#'><span>CIDs</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a>
+                        <ul>
+                            <li><a href='#'><span>BOLETIM DE PRODUÇÃO AMBULATORIAL</span></a></li>
+                            <li><a href='#'><span>ATENDIMENTO MÉDICO</span></a></li>
+                            <li><a href='#'><span>FICHA DE ATENDIMENTO AMBULATORIAL</span></a></li>
+                            <li><a href='#'><span>ESPECIAIS DA SAÚDE</span></a></li>
+                            <li><a href='#'><span>CADASTRAIS DA SAÚDE</span></a></li>
+                            <li><a href='#'><span>CONSISTENCIAR LOTES</span></a></li>
+                            <li><a href='#'><span>CARTÃO SUS</span></a></li>
+                            <li><a href='#'><span>CGS DUPLOS</span></a></li>
+                            <li><a href='#'><span>CGS CORREIOS</span></a></li>
+                            <li><a href='#'><span>GERAL CGS</span></a></li>
+                            <li><a href='#'><span>CBO</span></a></li>
+                            <li><a href='#'><span>PROFISSIONAIS DA SAÚDE</span></a></li>
+                            <li><a href='#'><span>PRODUÇÃO AMBULATORIAL</span></a></li>
+                            <li><a href='#'><span>AGRAVO</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a>
+                        <ul>
+                            <li><a href='#'><span>ENTREGA DE MEDICAMENTO</span></a></li>
+                            <li><a href='#'><span>DEVOLUÇÃO DE MEDICAMENTO</span></a></li>
+                            <li><a href='#'><span>MEDICAMENTO CONTINUADO</span></a></li>
+                            <li><a href='#'><span>GERAÇÃO LIVRO DOS CONTINUADOS</span></a></li>
+                            <li><a href='#'><span>PARÂMETROS</span></a></li>
+                            <li><a href='#'><span>FATOR DE RISCO</span></a></li>
+                            <li><a href='#'><span>EXPORTAR CGS PARA HIPERDIA</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>FARMÁCIA</span></a>
+                <ul>
+                    <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                        <ul>
+                            <li><a href='#'><span>ANVISA</span></a></li>
+                            <li><a href='#'><span>MEDICAMENTOS</span></a></li>
+                            <li><a href='#'><span>CLASSIFICAÇÃO</span></a></li>
+                            <li><a href='#'><span>TIPO DE RECEITA</span></a></li>
+                            <li><a href='#'><span>AÇÕES PROGRAMÁTICAS</span></a></li>
+                            <li><a href='#'><span>FARMACÊUTICO</span></a></li>
+                            <li><a href='#'><span>FARMÁCIA</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a>
+                        <ul>
+                            <li><a href='#'><span>MEDICAMENTOS</span></a></li>
+                            <li><a href='#'><span>RELATÓRIOS LEGAIS</span></a></li>
+                            <li><a href='#'><span>HISTÓRICO</span></a></li>
+                            <li><a href='#'><span>LISTA DE PACIENTES</span></a></li>
+                            <li><a href='#'><span>ADMINISTRAÇÃO DE MEDICAMENTOS</span></a></li>
+                            <li><a href='#'><span>REEMISSÃO DE COMPROVANTE</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a>
+                        <ul>
+                            <li><a href='#'><span>CONSULTA GERAL DA SAÚDE</span></a></li>
+                            <li><a href='#'><span>PACIENTE</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a>
+                        <ul>
+                            <li><a href='#'><span>ENTREGA DE MEDICAMENTO</span></a></li>
+                            <li><a href='#'><span>DEVOLUÇÃO DE MEDICAMENTO</span></a></li>
+                            <li><a href='#'><span>MEDICAMENTO CONTINUADO</span></a></li>
+                            <li><a href='#'><span>GERAÇÃO LIVRO DOS CONTINUADOS</span></a></li>
+                            <li><a href='#'><span>PARÂMETROS</span></a></li>
+                            <li><a href='#'><span>FATOR DE RISCO</span></a></li>
+                            <li><a href='#'><span>EXPORTAR CGS PARA HIPERDIA</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>HIPERDIA</span></a>
+                <ul>
+                    <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                        <ul>
+                            <li><a href='#'><span>CADASTRO GERAL DA SAÚDE</span></a></li>
+                            <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#'><span>DADOS PARA EXPORTAÇÃO</span></a></li>
+                    <li><a href='#'><span>CONSULTA GERAL DA SAÚDE</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a>
+                        <ul>
+                            <li><a href='#'><span>FATORES DE RISCO</span></a></li>
+                            <li><a href='#'><span>HIPERTENSOS E DIABÉTICOS</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>LABORATÓRIO</span></a>
+                <ul>
+                    <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                        <ul>
+                            <li><a href='#'><span>TIPO DE DOCUMENTO</span></a></li>
+                            <li><a href='#'><span>RECIPIENTE</span></a></li>
+                            <li><a href='#'><span>MATERIAL DE COLETA</span></a></li>
+                            <li><a href='#'><span>SETOR</span></a></li>
+                            <li><a href='#'><span>UNIDADE DE MEDIDA</span></a></li>
+                            <li><a href='#'><span>METODOLOGIA</span></a></li>
+                            <li><a href='#'><span>MÉTODO</span></a></li>
+                            <li><a href='#'><span>REQUISITO</span></a></li>
+                            <li><a href='#'><span>SINOMÍNIA</span></a></li>
+                            <li><a href='#'><span>EXAME</span></a></li>
+                            <li><a href='#'><span>LABORATÓRIO</span></a></li>
+                            <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a>
+                        <ul>
+                            <li><a href='#'><span>FATORES DE RISCO</span></a></li>
+                            <li><a href='#'><span>HIPERTENSOS E DIABÉTICOS</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>TFD</span></a>
+                <ul>
+                    <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                        <ul>
+                            <li><a href='#'><span>CADASTRO GERAL DA SAÚDE</span></a></li>
+                            <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a></li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>VACINAS</span></a>
+                <ul>
+                    <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                        <ul>
+                            <li><a href='#'><span>CADASTRO GERAL DA SAÚDE</span></a></li>
+                            <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a></li>
+                </ul>
+            </li>
+        </li>
+    </ul>
+</nav>
 
-        </section> <!-- Fim da sidebar - Menu Lateral -->
+</section> <!-- Fim da sidebar - Menu Lateral -->
 
-        <div class="content">
+<div class="content">
 
-            <h5>Área de Saúde</h5>><h5 class="link">Configurações Iniciais</h5>><h5 class="link">Unidades</h5>
+    <h5>Área de Saúde</h5>><h5 class="link">Agendamento</h5>><h5 class="link">Agendamento de Consulta</h5>
 
-                <h2 class="subtitle">UNIDADES</h2>
+    <h2 class="subtitle">AGENDAMENTO DE CONSULTA</h2>
 
-                <div class="text-content">
-	
-							<!-- Primeira ilustração -->
-                    <img class="ilustration" src="../../images/feedback.jpg" alt="">
+    <div class="text-content">                    
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id purus non sapien tristique egestas sed vitae leo. Maecenas dignissim vehicula arcu, id sollicitudin nibh aliquet at. Ut porta erat id erat blandit volutpat. Integer sollicitudin non nunc id tempus. Sed suscipit ex eget velit gravida tincidunt. Sed pharetra, mi non accumsan eleifend, dolor lacus molestie leo, id accumsan turpis magna ac mauris. Pellentesque luctus massa et ex porta tincidunt egestas sit amet nisi. Sed ultricies porta dolor id malesuada. Nam ullamcorper massa a ante sollicitudin, a volutpat velit viverra. Maecenas iaculis erat diam, vitae placerat massa laoreet nec. Proin at quam ex. Vestibulum rhoncus imperdiet turpis. Etiam a tellus elementum, porta velit non, ornare mi. Etiam nibh enim, tristique eu consequat quis, tristique et est.</p>
+                           <p>Depois de cadastrar e visualizar os tipos de ficha de agendamento disponíveis na plataforma e-Cidade, você pode realizar os agendamentos de consultas. Basta, no módulo Agendamento, seguir os passos a seguir, ilustrados na figura 5.
+                    </p>
                     <br>
-                    <p>Donec eleifend erat sit amet urna imperdiet, nec eleifend lorem varius. Morbi eu ullamcorper massa. Nulla non risus et odio volutpat vestibulum. Sed at lacus sit amet nisl tristique sagittis. Fusce fermentum dui sed nisl mattis malesuada. Suspendisse consectetur elit ac dignissim sodales. Morbi feugiat ligula at pulvinar sodales. Etiam fringilla dictum vulputate. Morbi aliquet metus eu magna pretium dignissim. Curabitur eget malesuada nulla. Quisque finibus urna augue, id aliquam eros cursus ut.</p>
+					<p>1- Na barra de menus, clique em Procedimentos. 
+                    </p>
+					<p>2- Siga até a opção Agendamento de Consultas.
+					</p>
+					<br>
+					<img class="ilustration2" src="../../images/agendamento_consulta1.png" alt="">
+					<br>
+					<p>A nova tela que surgiu é um formulário de agendamento de consulta, que você pode preencher a partir de pesquisas em cada campo, clicando em cada link. Veja os passos e as ilustrações a seguir:
+					</p>
+					<br>
+					<p> 1- Certifique-se o campo Unidade está preenchido com uma unidade válida. Caso contrário, volte ao tópico de Introdução para ver como selecionar uma unidade válida para o agendamento de consulta. Veja o exemplo da figura 6, onde a Unidade já vem selecionada.
+					</p>
+					<br>
+					<img class="ilustration2" src="../../images/agendamento_consulta2.png" alt="">
+					<br>
+					<p>2- O primeiro item a ser preenchido é a Especialidade. Clique no link Especialidade para que o sistema mostre uma nova tela, e assim você escolha o tipo de especialidade, pesquisando em uma lista. Basta apenas selecionar a especialidade desejada para voltar a tela anterior de agendamento ou clicar em Fechar. 
+					</p>
+					<br>
+					<p>3- O próximo item é o profissional de saúde. Clique no link Profissional, para que o sistema mostre uma nova tela, e assim você escolha o profissional associado a especialidade escolhida no item anterior. Basta apenas selecionar o profissional desejado para voltar a tela anterior de agendamento ou clicar em Fechar. 
+					</p>
+					<br>
+					<p>Observação: Note que se houver só um profissional associado a uma determinada especialidade, basta apenas clicar no link Especialidade e os dois campos serão preenchidos de uma só vez. Veja o exemplo da figura 7. 
+					</p>
+					<br>
+					<img class="ilustration2" src="../../images/agendamento_consulta3.png" alt="">
+					<br>
+					<p>4- O próximo passo é selecionar o procedimento que será feito na data marcada neste agendamento, pelo profissional de saúde associado a especialidade escolhida. Clique no  link Procedimento, para que o sistema mostre uma nova tela, e assim você escolha o profissional associado a especialidade escolhida no item anterior. Observe um exemplo de uma lista de procedimentos na figura 8. Basta apenas selecionar o procedimento desejado para voltar a tela anterior de agendamento ou clicar em Fechar. 
+					</p>
+					<br>
+					<img class="ilustration2" src="../../images/agendamento_consulta4.png" alt="">
+					<br>
+					<p>Observação: Você pode visualizar mais itens clicando no botão Todos, onde os mais de mil tipos de procedimentos serão exibidos nessa lista. 
+					</p>
+					<br>
+					<p>5 - O último passo é selecionar a data desejada para agendar o procedimento desejado. Para isso, basta clicar no botão D, no campo Agenda, e selecionar a data desejada. 
+					</p>
+					<br>
+					<p>Feito isso, agora você visualizará uma lista de agendamentos, organizados pela grade de horário do dia selecionado. Clique nos dias mostrados no calendário, localizado na parte direita da tela, e visualize os agendamentos que estão marcados, no dia selecionado. Observe a legenda, que destaca dias onde o profissional de saúde estará Ausente, Liberado, Marcado ou Lotado. 
+					</p>
+					<br>
+					<p>6- Para realizar um agendamento, clique no link “L”, nas Opções, mostradas na tabela de Agendamento na Grade de Horário do Dia. Veja a figura 9.
+					</p>
+					<br>
+					<p>Observação: A opção L quer dizer Lançar Conteúdo da linha, ou seja, alocar um paciente naquela linha correspondente ao horário que ele irá ocupar. As outras opções A, C e F (Anular conteúdo, Comprovante de Agendamento e Gerar FAA, respectivamente) serão tratadas mais a frente.
+					</p>
+					<br>
+					<p>7- Após cumprir todos esses passos, você poderá preencher os dados do paciente que está agendando um procedimento, na nova janela suspensa que surgir. Para isso, clique no link CGS, para buscar esse paciente, como mostrado na figura 10. 
+					</p>
+					<br>
+					<p>8- Com isso deverá surgir uma tela de pesquisa de paciente pelo Código do Cadastro Geral de Saúde. Para efetivar essa pesquisa de um paciente, digite algum dos dados que são necessários, como mostrado no exemplo da figura 11. De forma prática, o exemplo contém uma busca com filtragem pelo nome do paciente. Você pode utilizar o filtro mais conveniente. Após preencher um ou mais filtros, clique no botão Pesquisar.
+					</p>
+					<br>
+					<p>9- Aparecerá então, uma lista de Pacientes, os quais o nome se assemelha ao que você está procurando. Selecione um paciente da lista para prosseguir clicando no campo nome do paciente desejado. Veja a figura 12.
+					</p>
+					<br>
+					<p>10- Uma mensagem de confirmação aparecerá em sua tela. Clique em OK, caso o nome selecionado, é o de sua preferência. Veja a figura 13. Caso contrário, clique em Cancel para voltar a pesquisa. Observe que o código CGS aparece ao lado do nome do paciente desejado, caso seja útil.
+					</p>
+					<br>
+					<p>Feito isso, o processo de agendamento estará concluído e o sistema irá gerar automaticamente, um comprovante de agendamento, como mostrado na figura 14 a seguir. Veja que todas as informações preenchidas nos passos anteriores estarão descritas nesse comprovante.
+					</p>
                     <br>
-                    <p>Pellentesque lobortis ullamcorper maximus. Sed vel tristique nunc. Proin semper sapien id pretium rutrum. Integer vulputate elit lectus, non porta augue aliquam nec. Sed condimentum neque et ipsum efficitur cursus. Aenean dictum, nisl non aliquet tristique, sem eros varius velit, quis rutrum tellus libero at felis. Donec vel volutpat ante. Quisque finibus nulla eu mi accumsan maximus. Quisque euismod dictum quam vel posuere. Cras ac ex nec augue placerat vehicula. Proin quis dui in est sollicitudin lacinia. Aenean a mi maximus, dapibus ipsum ac, iaculis enim. Vestibulum vitae porttitor urna.</p>
+					<p>Observação: Observe também que, após que o agendamento é realizado, a Grade de Horário do Dia é alterada, contendo agora, o agendamento cadastrado. A opção C, para gerar o comprovante de agendamento, e a opção F, para gerar a ficha de atendimento ambulatorial, poderão ser utilizadas e serão detalhadas nas próximas seções. Observe a figura 15.
+					</p>
                     <br>
+
                     
-                    <!-- Segunda ilustração -->
-                    <img class="ilustration" src="../../images/feedback.jpg" alt="">
-                    
-                    
-                    <p>Vivamus sit amet tincidunt lorem, lobortis tristique justo. Nunc ullamcorper sem quis urna commodo, eu suscipit nisi tristique. Maecenas in felis purus. Fusce in mauris rhoncus, venenatis tortor eget, pharetra ipsum. Integer et commodo orci. Sed lorem elit, semper vel orci nec, dignissim venenatis velit. Nulla facilisi.</p>
-                    <br>
-                    <p>In accumsan rhoncus lacus, eget elementum nisl convallis in. Nulla aliquam maximus erat sed tincidunt. Sed gravida dapibus lacus id sodales. Suspendisse efficitur erat eget sollicitudin pellentesque. Vestibulum ipsum erat, scelerisque vitae tortor eget, tempus posuere lorem. Quisque id accumsan dolor. Aliquam cursus nibh eget justo posuere consectetur. Proin dignissim condimentum facilisis.</p>
-                    <br>
-
-                </div>
-
-        </div> <!-- Fim do conteúdo - texto -->
 
 
-  		</div> <!-- Fim do conteúdo principal -->
+    </div>
 
-	<footer>
-	</footer>  
+</div> <!-- Fim do conteúdo - texto -->
 
-  </body>
+
+</div> <!-- Fim do conteúdo principal -->
+
+<footer>
+</footer>  
+
+</body>
 
 </html>
