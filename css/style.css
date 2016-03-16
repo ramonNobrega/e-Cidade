@@ -238,6 +238,18 @@ ul li {
     clear: both;
 }
 
+.next{
+    float: right;
+}
+
+.next a, .previous a{
+    font-size: 14px;
+}
+
+.previous{
+    float: left;
+}
+
 .lateral li {
     border-bottom: 1px solid #fff;
     background-color: #F7C2BB;
@@ -285,4 +297,21 @@ li:hover ul { display: block; }
 #ilustration {
     max-height: 600px;
     max-width: 600px;
+}
+
+#pdf-button {
+    border: 0px;
+    margin-top: 40px;
+    background-color: #f1f1f1;
+    width: 260px;
+    height: 80px;
+}
+
+#pdf-button a {
+    text-transform: none;
+    text-decoration: none;
+    color: #303030;
+    margin-left: 15px;
+    line-height: 80px;
+    margin-bottom: 20px;
 }

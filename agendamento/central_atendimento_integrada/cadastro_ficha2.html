@@ -3,9 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>Aprenda Mais Saúde - e-Cidade - Documentação</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>    
+    <script src="../../js/mtlsr-lightbox.js"></script>    
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/style-menu.css">
     <link rel="stylesheet" href="../../css/style-buttons.css">
+    <link rel="stylesheet" href="../../css/mtlsr-lightbox.css" />
 </head>
 
 <body>
@@ -47,16 +50,6 @@
 <section class="sidebar">
 
     <h4 class="subtitle">INFORMAÇÕES GERAIS</h4>
-
-    <nav class="menu-info-gerais">
-        <ul class="lateral">
-            <li><a href="#">INTRODUÇÃO</a></li>
-            <li><a href="#">COMO FUNCIONA?</a></li>
-            <li><a href="#">ÁREAS</a></li>
-        </ul>
-    </nav>
-
-    <h4 class="subtitle">ÁREA DE SAÚDE E SEUS MÓDULOS</h4>
 
     <nav class="menu-info-gerais">
         <ul class="lateral">
@@ -289,6 +282,12 @@
     </ul>
 </nav>
 
+    <button id="pdf-button" class="bt_main">
+        <img id="icon-pdf" src="../../assets/ic_adobe_manual.png">
+        <a href="">Download do guia em PDF</a>
+    </button>
+
+
 </section> <!-- Fim da sidebar - Menu Lateral -->
 
 <div class="content">
@@ -299,20 +298,36 @@
 
     <div class="text-content">                    
         <!-- Segunda ilustração -->
-        <img class="ilustration" src="../../images/ag_figura_2.png" alt="">
-       <p>A nova ficha contém um código, que é preenchido automaticamente, e uma descrição a nova ficha que será criada. Você pode adicionar os dados necessários em uma tele semelhante a que é mostrada ao lado. Adicione uma descrição curta a nova ficha no campo <b>Descrição</b> e Clique em <b>Incluir</b>. 
-        </p>
+        <div class="mtlsr-images-for-lightbox">
+            <a href="../../images/ag_figura_2.png">
+                <img class="ilustration" src="../../images/ag_figura_2.png" alt="">
+            </a>          
+        </div>
+
         
+        <p>A nova ficha contém um código, que é preenchido automaticamente, e uma descrição a nova ficha que será criada. Você pode adicionar os dados necessários em uma tele semelhante a que é mostrada ao lado. Adicione uma descrição curta a nova ficha no campo <b>Descrição</b> e Clique em <b>Incluir</b>. 
+        </p> 
 
     </div>
 
 </div> <!-- Fim do conteúdo - texto -->
 
+    <div class="navigation">
+        <button class="previous"><img src="../../assets/ic_seta_esquerda.png"><a href="#">ANTERIOR</a><br><a href="">Órgão</a></button>
+        <button class="next"><a href="">PRÓXIMO</a><br><a href="">Órgão</a>
+        <img src="../../assets/ic_seta_direita.png"></button>
+    </div>
 
 </div> <!-- Fim do conteúdo principal -->
 
 <footer>
+    <nav class="principal"></nav>
 </footer>  
+
+<!-- Imagem ampliada-->
+<div class="mtlsr-lightbox">
+    <a href="#" class="close">&#9421;</a>
+</div>
 
 </body>
 
