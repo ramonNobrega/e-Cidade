@@ -271,7 +271,7 @@ ul li {
 
 .navigation {
     position: relative;
-    bottom: 0;
+    top: 290px;
 }
 
 .proximo{
@@ -296,6 +296,12 @@ ul li {
     margin-left: 20px;
     margin-right: 10px;
     float: right;
+}
+
+.previous .title,
+.proximo .title {
+    font-family: 'Open Sans Semibold', sans-serif;
+    color: #F97D6D;
 }
 
 .next, 
@@ -360,11 +366,14 @@ li:hover ul { display: block; }
     height: 80px;
 }
 
-#pdf-button a {
-    text-transform: none;
-    text-decoration: none;
-    color: #303030;
-    margin-left: 15px;
+#pdf-button img {
+    float: left;
     line-height: 80px;
-    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+#pdf-button h3 {
+    text-transform: none;
+    text-align: left;
+    font-size: 14px;
 }
