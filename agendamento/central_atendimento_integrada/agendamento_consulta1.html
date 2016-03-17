@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <title>Aprenda Mais Saúde - e-Cidade - Documentação</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>    
+    <script src="../../js/mtlsr-lightbox.js"></script>    
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/style-menu.css">
     <link rel="stylesheet" href="../../css/style-buttons.css">
+    <link rel="stylesheet" href="../../css/mtlsr-lightbox.css" />
 </head>
 
 <body>
@@ -289,6 +292,11 @@
     </ul>
 </nav>
 
+    <button id="pdf-button" class="bt_main">
+        <img id="icon-pdf" src="../../assets/ic_adobe_manual.png">
+        <h3>Download do guia em PDF</h3>
+    </button>
+
 </section> <!-- Fim da sidebar - Menu Lateral -->
 
 <div class="content">
@@ -307,22 +315,56 @@
 					<p>2- Siga até a opção <b>Agendamento de Consultas</b>.
 					</p>
 					<br>
-					<img class="ilustration2" src="../../images/agendamento_consulta1.png" alt="">
-					<br>
+					 <!-- ilustração -->
+					<div class="mtlsr-images-for-lightbox">
+						<a href="../../images/agendamento_consulta1.png"> <!-- Imagem ampliada -->
+							<img class="ilustration2" src="../../images/agendamento_consulta1_reduzido.png" alt=""> <!-- Imagem miniatura -->
+						</a>          
+					</div>
 					
-
-                    
 
 
     </div>
 
 </div> <!-- Fim do conteúdo - texto -->
 
+     
+	<section class="navigation">
+        <div class="previous">
+            <img class="seta" src="../../assets/ic_seta_esquerda.png">
+            <a href="#">ANTERIOR</a>
+            <br>
+            <h4>Órgão</h4>
+        </div>
+        <div class="proximo">
+            <img class="seta" src="../../assets/ic_seta_direita.png">
+            <a href="">PRÓXIMO</a>
+            <br>
+            <h4>Órgão</h4>
+        </div>
+    </section>
 
 </div> <!-- Fim do conteúdo principal -->
 
-<footer>
-</footer>  
+<section class="bottom">
+    <nav class="principal">
+        <article class="logo-moodle">
+            <div><h4 style="margin-bottom: 10px">Desenvolvido em:</h4></div>
+            <img class="logo" src="../../assets/logo_moodle.png" title="Logo Moodle">
+        </article>
+        <article class="logos-silibrina">
+            <div><h4 style="margin-bottom: 10px">Financiado e Desenvolvido por:</h4></div>
+            <img id="logo" src="../../assets/logo_brasil.png" title="Logo Brasil">
+            <img id="logo" src="../../assets/logo_fapesq.png" title="Logo FAPESQ-PB">
+            <img id="logo" src="../../assets/logo_silibrina.png" title="Logo Silibrina Tecnologia">
+        </article>
+    </nav>
+</section> <!-- fim do rodapé-->
+
+<!-- Imagem ampliada-->
+<div class="mtlsr-lightbox">
+    <a href="#" class="close">&#9421;</a>
+</div>
 
 </body>
 
