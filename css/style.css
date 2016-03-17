@@ -271,7 +271,6 @@ ul li {
 
 .navigation {
     position: relative;
-    top: 290px;
 }
 
 .proximo{
@@ -279,6 +278,8 @@ ul li {
 }
 
 .proximo a, .previous a{
+    font-family: 'Open Sans Semibold', sans-serif;
+    color: #F97D6D;
     font-size: 14px;
 }
 

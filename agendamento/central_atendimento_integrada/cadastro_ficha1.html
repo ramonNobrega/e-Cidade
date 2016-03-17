@@ -3,9 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>Aprenda Mais Saúde - e-Cidade - Documentação</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>    
+    <script src="../../js/mtlsr-lightbox.js"></script>    
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/style-menu.css">
     <link rel="stylesheet" href="../../css/style-buttons.css">
+    <link rel="stylesheet" href="../../css/mtlsr-lightbox.css" />
 </head>
 
 <body>
@@ -30,10 +33,10 @@
      <h3 id="question">AINDA NÃO É ALUNO?</h3>
      <button onclick="location.href='http://moodle.cloud.citta.org.br/moodle/login/signup.php?';" class="bt_second_action bt_main">CADASTRO GRATUITO</button>
  </section>
-</div>	 <!-- Fim do cadastro -->	
+</div>   <!-- Fim do cadastro -->   
 
 <div class="main">
-	
+    
   <h2 id="title">DOCUMENTAÇÃO </h2>
 
   <section class="search">
@@ -47,16 +50,6 @@
 <section class="sidebar">
 
     <h4 class="subtitle">INFORMAÇÕES GERAIS</h4>
-
-    <nav class="menu-info-gerais">
-        <ul class="lateral">
-            <li><a href="#">INTRODUÇÃO</a></li>
-            <li><a href="#">COMO FUNCIONA?</a></li>
-            <li><a href="#">ÁREAS</a></li>
-        </ul>
-    </nav>
-
-    <h4 class="subtitle">ÁREA DE SAÚDE E SEUS MÓDULOS</h4>
 
     <nav class="menu-info-gerais">
         <ul class="lateral">
@@ -289,6 +282,12 @@
     </ul>
 </nav>
 
+    <button id="pdf-button" class="bt_main">
+        <img id="icon-pdf" src="../../assets/ic_adobe_manual.png">
+        <h3>Download do guia em PDF</h3>
+    </button>
+
+
 </section> <!-- Fim da sidebar - Menu Lateral -->
 
 <div class="content">
@@ -303,7 +302,12 @@
         <br>
         <p>Para realizar esse cadastro, siga os passos ilustrados na figura a seguir e descritos abaixo:
         </p><br>
-        <img class="" src="../../images/ag_figura_1.png" alt=""><br><br>
+            <div class="mtlsr-images-for-lightbox">
+            <a href="../../images/ag_figura_1.png"> <!-- Imagem ampliada -->
+                <img class="" src="../../images/ag_figura_1.png" alt=""><br><br><!-- Imagem miniatura -->
+            </a>          
+            </div>
+        
          <p>1. Na barra de menus, clique no menu <b>Cadastros</b>.
         </p>
         <p>2. Selecione <b>Tipo de Ficha</b>.
@@ -314,11 +318,42 @@
 
 </div> <!-- Fim do conteúdo - texto -->
 
+    <section class="navigation">
+        <div class="previous">
+            <img class="seta" src="../../assets/ic_seta_esquerda.png">
+            <a href="#">ANTERIOR</a>
+            <br>
+            <h4>Órgão</h4>
+        </div>
+        <div class="proximo">
+            <img class="seta" src="../../assets/ic_seta_direita.png">
+            <a href="">PRÓXIMO</a>
+            <br>
+            <h4>Órgão</h4>
+        </div>
+    </section>
 
 </div> <!-- Fim do conteúdo principal -->
 
-<footer>
-</footer>  
+<section class="bottom">
+    <nav class="principal">
+        <article class="logo-moodle">
+            <div><h4 style="margin-bottom: 10px">Desenvolvido em:</h4></div>
+            <img class="logo" src="../../assets/logo_moodle.png" title="Logo Moodle">
+        </article>
+        <article class="logos-silibrina">
+            <div><h4 style="margin-bottom: 10px">Financiado e Desenvolvido por:</h4></div>
+            <img id="logo" src="../../assets/logo_brasil.png" title="Logo Brasil">
+            <img id="logo" src="../../assets/logo_fapesq.png" title="Logo FAPESQ-PB">
+            <img id="logo" src="../../assets/logo_silibrina.png" title="Logo Silibrina Tecnologia">
+        </article>
+    </nav>
+</section> <!-- fim do rodapé-->
+
+<!-- Imagem ampliada-->
+<div class="mtlsr-lightbox">
+    <a href="#" class="close">&#9421;</a>
+</div>
 
 </body>
 
