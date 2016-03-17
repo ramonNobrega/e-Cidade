@@ -184,7 +184,8 @@ p {
     -webkit-transform: rotate(45deg);
 
 }
-.top .logo img{
+.top .logo img, 
+.bottom .logo img{
     display: block;
     margin: 0 auto;
 }
@@ -238,16 +239,68 @@ ul li {
     clear: both;
 }
 
-.next{
+.bottom{
+    width: 100%;
+    height: 100px;
+}
+
+.bottom .logo-moodle{
+    width: 25%;
+    float: left;
+    padding: 14px 0;
+    position: relative;
+    margin-left: 20px;
+}
+
+.bottom .logos-silibrina{
+    float: right;
+    box-sizing: border-box;
+    padding: 14px 0;
+    position: relative;
+    margin-right: 20px
+}
+
+.bottom .logos-silibrina #logo{
+    display: inline;
+    margin-left: 15px;
+}
+
+.bottom .logos-silibrina h4{
     float: right;
 }
 
-.next a, .previous a{
+.navigation {
+    position: relative;
+    bottom: 0;
+}
+
+.proximo{
+    float: right;
+}
+
+.proximo a, .previous a{
     font-size: 14px;
 }
 
 .previous{
     float: left;
+}
+
+.previous .seta {
+    margin-left: 10px;
+    margin-right: 20px;
+    float: left;
+}
+
+.proximo .seta {
+    margin-left: 20px;
+    margin-right: 10px;
+    float: right;
+}
+
+.next, 
+.previous{
+    margin-bottom: 0px;
 }
 
 .lateral li {
