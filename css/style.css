@@ -284,16 +284,26 @@ ul li {
 
 .proximo{
     float: right;
+    min-width: 50%;
 }
 
-.proximo a, .previous a{
+.proximo a{
     font-family: 'Open Sans Semibold', sans-serif;
+    color: #F97D6D;
+    float: right;
+    font-size: 14px;
+} 
+
+.previous a {
+    font-family: 'Open Sans Semibold', sans-serif;
+    float: left;
     color: #F97D6D;
     font-size: 14px;
 }
 
 .previous{
     float: left;
+    min-width: 50%;
 }
 
 .previous .seta {
