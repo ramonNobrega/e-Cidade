@@ -39,9 +39,7 @@
     /*margin-left: 20px;*/
 }
 
-li:hover ul { 
-    display: block; 
-}
+li:hover ul { display: block; }
 
 /* The hover state of the menu/submenu links */
 #menu > ul li > a:hover,
@@ -70,7 +68,7 @@ li:hover ul {
 /* THE SUBMENUS */
 #menu > ul ul {
     position: absolute;
-    bottom: 100%;
+    left: 100%;
     padding-left: 10px;
     opacity: 0;
     min-width: 100%;
