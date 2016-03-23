@@ -27,6 +27,12 @@ body {
     border-radius: 5px;
 }
 
+.ilustration1{
+	border: 3px solid #78909C;
+    border-radius: 5px;
+	
+}
+
 .ilustration2 {
     width: 100%;
 }
