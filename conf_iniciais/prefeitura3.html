@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aprenda Mais Saúde - e-Cidade - Documentação</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>    
+    <script src="..//js/mtlsr-lightbox.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>    
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-menu.css">
+    <link rel="stylesheet" href="../css/style-buttons.css">
+    <link rel="stylesheet" href="../css/mtlsr-lightbox.css" />
+  </head>
+  
+  <body>
+		
+        <section class="top">
+		<nav class="principal">
+            <article class="logo">
+                <img src="../images/logo_ecidade.png" title="Logo e-Cidade" height="51" width="190" alt="">
+            </article>
+
+            <ul>
+				<li><a href="#videoaulas">VÍDEO AULAS</a></li>
+	    		<li><a href="#sobre">SOBRE OS CURSOS</a></li>
+	    		<li><a href="#doc">DOCUMENTAÇÃO</a></li>
+	    		<li><a href="#inicio">INÍCIO</a></li>
+		  </ul>
+		</nav>
+        </section> <!-- fim do topo-->
+
+		<div class="cadastro principal">
+			<section class="new_user">
+			<h3 id="question">AINDA NÃO É ALUNO?</h3>
+			<button onclick="location.href='http://moodle.cloud.citta.org.br/moodle/login/signup.php?';" class="bt_second_action bt_main">CADASTRO GRATUITO</button>
+			</section>
+		</div>	 <!-- Fim do cadastro -->	
+		
+		<div class="main">
+	
+		<h2 id="title">DOCUMENTAÇÃO </h2>
+
+		<section class="search">
+         
+         <button style="float:right;" class="bt_second_action bt_main">OK</button>
+
+        <input style="height:40px; width:60%; float:right; border-radius: 5px;" placeholder="Pesquisa rápida..." type="text">
+        </section>
+        <hr>
+        
+        <section class="sidebar">
+            
+            <h4 class="subtitle">INFORMAÇÕES GERAIS</h4>
+
+        <nav class="menu-info-gerais">
+            <ul class="lateral">
+                <li><a href="#">INTRODUÇÃO</a></li>
+                <li><a href="#">COMO FUNCIONA?</a></li>
+                <li><a href="#">ÁREAS</a></li>
+            </ul>
+        </nav>
+
+            <h4 class="subtitle">ÁREA DE SAÚDE E SEUS MÓDULOS</h4>
+
+        <!--Menu Módulos-->
+        <nav id='menu' class="menu-modulos">
+                <ul class="lateral">
+                    <li class='active has-sub'><a href='#'><span>CONFIGURAÇÕES INICIAIS</span></a>
+                        <ul id="sub-menu1">
+                            <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                            <li><a href='#'><span>PREFEITURA</span></a></li>
+                            <li><a href='#'><span>ÓRGÃO</span></a></li>
+                            <li><a href='#'><span>UNIDADES</span></a></li>
+                            <li><a href='#'><span>DEPARTAMENTO</span></a></li>
+                            <li><a href='#'><span>UPS</span></a></li>
+                            <li><a href='#'><span>CADASTRO GERAL DO MUNICÍPIO</span></a></li>
+                            <li><a href='#'><span>ESTABELECIMENTO HOSPITALAR</span></a></li>
+                            <li><a href='#'><span>PROFISSIONAL DE SAÚDE</span></a></li>
+                            <li><a href='#'><span>PACIENTE</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>AGENDAMENTO</span></a>
+                        <ul id="sub-menu2">
+                            <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                            <li class='active has-sub'><a href='#'><span>CENTRAL DE AGENDAMENTO INTEGRADA</span></a>
+                                <ul id="sub-sub-menu1">
+                                    <li><a href='#'><span>CADASTRO DO TIPO DE FICHA</span></a></li>
+                                    <li><a href='#'><span>AGENDAMENTO DE CONSULTA</span></a></li>
+                                    <li><a href='#'><span>CONSULTA DA AGENDA DE PACIENTES</span></a></li>
+                                    <li><a href='#'><span>TRANSFERÊNCIA</span></a></li>
+                                    <li><a href='#'><span>ANULAR AGENDAMENTOS</span></a></li>
+                                    <li><a href='#'><span>AGENDAMENTO UNIFICADO</span></a></li>
+                                    <li><a href='#'><span>CONTROLE DE COTAS</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a>
+                                <ul id="sub-sub-menu2">
+                                    <li><a href='#'><span>AGENDAMENTO</span></a></li>
+                                    <li><a href='#'><span>AGENDAMENTO POR PERÍODO</span></a></li>
+                                    <li><a href='#'><span>AGENDAMENTO ANULADO</span></a></li>
+                                    <li><a href='#'><span>CONTROLE DE COTAS</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href='#'><span>GERAÇÃO DE FAA's</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>AMBULATORIAL</span></a>
+                        <ul>
+                            <li><a href='#'><span>INTRODUÇÃO</span></a></li>
+                            <li class='active has-sub'><a href='#'><span>CADASTROS</span></a>
+                                <ul>
+                                    <li><a href='#'><span>MOTIVO DE AUSÊNCIA</span></a></li>
+                                    <li><a href='#'><span>MOTIVO DE ATENDIMENTO</span></a></li>
+                                    <li><a href='#'><span>PROCEDIMENTOS NÃO-FATURÁVEIS</span></a></li>
+                                    <li><a href='#'><span>CADASTRO GERAL DA SAÚDE</span></a></li>
+                                    <li><a href='#'><span>CARTÃO SUS</span></a></li>
+                                    <li><a href='#'><span>FATOR DE RISCO</span></a></li>
+                                    <li><a href='#'><span>PROFISSIONAL DE SAÚDE</span></a></li>
+                                    <li><a href='#'><span>PROFISSIONAIS FORA DA REDE</span></a></li>
+                                    <li><a href='#'><span>DISTRITOS SANITÁRIOS</span></a></li>
+                                    <li><a href='#'><span>UPS</span></a></li>
+                                    <li><a href='#'><span>FAMÍLIA</span></a></li>
+                                    <li><a href='#'><span>MICRO-ÁREA</span></a></li>
+                                    <li><a href='#'><span>FAMÍLIA/MICRO-ÁREA</span></a></li>
+                                    <li><a href='#'><span>TABELAS NACIONAIS</span></a></li>
+                                    <li><a href='#'><span>AÇÕES PROGRAMÁTICAS</span></a></li>
+                                    <li><a href='#'><span>GERAL DO MUNICÍPIO</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='active has-sub'><a href='#'><span>CONSULTAS</span></a>
+                                <ul>
+                                    <li><a href='#'><span>CONSULTA GERAL DA SAÚDE</span></a></li>
+                                    <li><a href='#'><span>PRONTUÁRIOS DA FAMÍLIA</span></a></li>
+                                    <li><a href='#'><span>CIDs</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='active has-sub'><a href='#'><span>RELATÓRIOS</span></a>
+                                <ul>
+                                    <li><a href='#'><span>BOLETIM DE PRODUÇÃO AMBULATORIAL</span></a></li>
+                                    <li><a href='#'><span>ATENDIMENTO MÉDICO</span></a></li>
+                                    <li><a href='#'><span>FICHA DE ATENDIMENTO AMBULATORIAL</span></a></li>
+                                    <li><a href='#'><span>ESPECIAIS DA SAÚDE</span></a></li>
+                                    <li><a href='#'><span>CADASTRAIS DA SAÚDE</span></a></li>
+                                    <li><a href='#'><span>CONSISTENCIAR LOTES</span></a></li>
+                                    <li><a href='#'><span>CARTÃO SUS</span></a></li>
+                                    <li><a href='#'><span>CGS DUPLOS</span></a></li>
+                                    <li><a href='#'><span>CGS CORREIOS</span></a></li>
+                                    <li><a href='#'><span>GERAL CGS</span></a></li>
+                                    <li><a href='#'><span>CBO</span></a></li>
+                                    <li><a href='#'><span>PROFISSIONAIS DA SAÚDE</span></a></li>
+                                    <li><a href='#'><span>PRODUÇÃO AMBULATORIAL</span></a></li>
+                                    <li><a href='#'><span>AGRAVO</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='active has-sub'><a href='#'><span>PROCEDIMENTOS</span></a>
+                                <ul>
+                                    <li><a href='#'><span>ENTREGA DE MEDICAMENTO</span></a></li>
+                                    <li><a href='#'><span>DEVOLUÇÃO DE MEDICAMENTO</span></a></li>
+                                    <li><a href='#'><span>MEDICAMENTO CONTINUADO</span></a></li>
+                                    <li><a href='#'><span>GERAÇÃO LIVRO DOS CONTINUADOS</span></a></li>
+                                    <li><a href='#'><span>PARÂMETROS</span></a></li>
+                                    <li><a href='#'><span>FATOR DE RISCO</span></a></li>
+                                    <li><a href='#'><span>EXPORTAR CGS PARA HIPERDIA</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+
+            <button id="pdf-button" class="bt_main">
+                <img id="icon-pdf" src="../assets/ic_adobe_manual.png">
+                <h3><b>Download do guia em PDF</b></h3>
+            </button>
+
+        </section> <!-- Fim da sidebar - Menu Lateral -->
+
+        <div class="content">
+
+            <h5>Área de Saúde</h5>><h5 class="link">Configurações Iniciais</h5>><h5 class="link">Prefeitura</h5>
+
+                <h2 class="subtitle">PREFEITURA</h2>
+
+                <div class="text-content">
+                
+                    <p>Selecionada a instituição <b>PREFEITURA DBSELLER</b>, siga os passos ilustrados e descritos abaixo para a alteração dos dados para a sua prefeitura, começando pelo bloco <b>Dados da Instituição</b>:</p><br><br>
+
+        <ul class="passos">
+            <li><div class="mtlsr-images-for-lightbox">
+                <a href="../images/cadastrar_ficha0.png"> <!-- Imagem ampliada -->
+                    <img class="ilustration" src="../images/logo_ecidade.png" alt="" title="Clique para ampliar"> <!-- Imagem miniatura -->
+                </a>          
+            </div>
+            <h3 class="numeracao">1</h3><div style="margin-left: 60px;"><p> O campo <b>Código</b> está destacado da cor amarela, isso porque ele é preenchido automaticamente. Porém você pode alterar os campos <b>Nome da Instituição</b>, <b>Nome abreviado da Instituição</b>, <b>Endereço da Instituição</b> e <b>Número do endereço</b>. Após realizar essas alterações, prossiga para o próximo passo.</p></div></li>
+            <hr align="center" width="40" size="2" color=gray><br>
+            <!-- ilustração -->
+            <li><div class="mtlsr-images-for-lightbox">
+                <a href="../../images/cadastrar_ficha0.png"> <!-- Imagem ampliada -->
+                    <img class="ilustration" src="../images/logo_ecidade.png" alt="" title="Clique para ampliar"> <!-- Imagem miniatura -->
+                </a>          
+            </div>
+            <h3 class="numeracao">2</h3><div style="margin-left: 60px;"><p>Outros dados que podem ser alterados em sequência são: <b>Unidade Federativa da Instituição</b>, <b>Município da Instituição</b>, <b>CEP</b>, <b>Telefone</b> e <b>Fax</b> da Instituição. Após realizar essas alterações com dados válidos, prossiga para o próximo passo.</p></div></li>
+            <hr align="center" width="40" size="2" color=gray><br>
+            <!-- ilustração -->
+            <li><div class="mtlsr-images-for-lightbox">
+                <a href="../../images/cadastrar_ficha.png"> <!-- Imagem ampliada -->
+                    <img class="ilustration" src="../images/logo_ecidade.png" alt="" title="Clique para ampliar"> <!-- Imagem miniatura -->
+                </a>          
+            </div>
+            <h3 class="numeracao">3</h3><div style="margin-left: 60px;"><p>Observe que há dois campos intitulados <b>Cgc</b> e <b>Número do CGM</b>. Esses campos não precisam ser alterados, pois já contém valores ajustados para a correta utilização da referida Instituição no software e-Cidade. Porém você pode alterar os campos <b>URL</b> (endereço do site da Prefeitura), nomes do <b>Prefeito</b> e <b>Vice-prefeito</b>.</p></div></li>
+        </ul>
+
+        <p>Ainda há mais dados agrupados nos blocos <b>Dados da Instituição Financeiro</b> e <b>Dados da Instituição Tributário</b> que você fará a devida alteração posteriormente.</p>
+
+                </div>
+
+        </div> <!-- Fim do conteúdo - texto -->
+
+
+<div class="navigation">
+        <div class="previous">
+            <img class="seta" src="../assets/ic_seta_esquerda.png">
+            <a href="prefeitura2.html">ANTERIOR</a>
+            <br>
+            <h4 style="margin-left: 40px;">Seleção da Instituição</h4>
+        </div>
+        <div class="proximo">
+            <img class="seta" src="../assets/ic_seta_direita.png">
+            <a href="prefeitura4.html">PRÓXIMO</a>
+            <br>
+            <h4 style="float: right; ">Alteração dos dados da Prefeitura (cont.)</h4>
+        </div>
+    </div>
+
+    </div> <!-- Fim do conteúdo principal -->
+
+    <section class="bottom">
+        <nav class="principal">
+            <article class="logo-moodle">
+                <div><h4 style="margin-bottom: 10px">Desenvolvido em:</h4></div>
+                <img class="logo" src="../assets/logo_moodle.png" title="Logo Moodle">
+            </article>
+            <article class="logos-silibrina">
+                <div><h4 style="margin-bottom: 10px">Financiado e Desenvolvido por:</h4></div>
+                <img id="logo" src="../assets/logo_brasil.png" title="Logo Brasil">
+                <img id="logo" src="../assets/logo_fapesq.png" title="Logo FAPESQ-PB">
+                <img id="logo" src="../assets/logo_silibrina.png" title="Logo Silibrina Tecnologia">
+            </article>
+        </nav>
+    </section> <!-- fim do rodapé-->
+
+    <!-- Imagem ampliada-->
+    <div class="mtlsr-lightbox">
+        <a href="#" class="close">&#9421;</a>
+    </div>
+
+</body>
+
+</html>
